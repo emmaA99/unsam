@@ -18,7 +18,15 @@ SELECT * FROM wp_users; se ve el usuario configurado en la base mi_base
 
 para subir al git:
 
+git remote add origin git@github.com:emmaA99/unsam.git
 
+git add .
+
+git commit -m "msj personalizado"
+
+git status
+
+git push
 
  
 
