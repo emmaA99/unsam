@@ -1,0 +1,20 @@
+instalar docker-compose
+
+creacion archivo docker-compose.yml
+
+docker-compose up -d para levantar el servidor y la base
+
+acceder a localhost 8080 para ver el wordpress
+
+configurar wordpress con su usuario
+
+sudo docker exec -it tp_wordpress_1 /bin/bash para entrar bash wordpress
+
+mysql -u admin -p -h db entro al servidor mysql
+
+use mi_base para entrar a la base de datos creada desde el docker-compose.yml para wordpress
+
+SELECT * FROM wp_users; se ve el usuario configurado en la base mi_base
+
+ 
+
