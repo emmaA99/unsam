@@ -16,5 +16,9 @@ use mi_base para entrar a la base de datos creada desde el docker-compose.yml pa
 
 SELECT * FROM wp_users; se ve el usuario configurado en la base mi_base
 
+para subir al git:
+
+
+
  
 
