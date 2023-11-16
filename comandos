@@ -10,6 +10,10 @@ configurar wordpress con su usuario
 
 sudo docker exec -it tp_wordpress_1 /bin/bash para entrar bash wordpress
 
+apt-get update < updates de apps dentro de bash
+
+apt-get install default-mysql-client < Instalar el cliente en el bash
+
 mysql -u admin -p -h db entro al servidor mysql
 
 use mi_base para entrar a la base de datos creada desde el docker-compose.yml para wordpress
