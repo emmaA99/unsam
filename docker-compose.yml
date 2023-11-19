@@ -17,11 +17,8 @@ services:
       - db
     ports:
       - "8080:80"
-    environment:
-      WORDPRESS_DB_HOST: db
-      WORDPRESS_DB_USER: admin
-      WORDPRESS_DB_PASSWORD: admin
-      WORDPRESS_DB_NAME: mi_base
+    env_file:
+      - env_wordpress.txt
 
 volumes:
   db_data:
