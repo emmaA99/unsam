@@ -2,7 +2,7 @@ version: '3'
 
 services:
   db:
-    image: mysql:8.0.34
+    image: mysql:5.7
     volumes:
       - db_data:/var/lib/mysql
     environment:
@@ -11,14 +11,18 @@ services:
       MYSQL_USER: admin
       MYSQL_PASSWORD: admin
 
+
   wordpress:
     image: wordpress:6.3
     depends_on:
       - db
     ports:
       - "8080:80"
-    env_file:
-      - env_wordpress.txt
+    environment:
+      WORDPRESS_DB_HOST: db
+      WORDPRESS_DB_USER: admin
+      WORDPRESS_DB_PASSWORD: admin
+      WORDPRESS_DB_NAME: mi_base
 
 volumes:
   db_data:
