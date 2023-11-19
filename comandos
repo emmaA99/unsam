@@ -20,6 +20,8 @@ use mi_base para entrar a la base de datos creada desde el docker-compose.yml pa
 
 SELECT * FROM wp_users; se ve el usuario configurado en la base mi_base
 
+docker-compose down -v para borrar los volumenes
+----------------------------------
 para subir al git:
 
 git remote add origin git@github.com:emmaA99/unsam.git
