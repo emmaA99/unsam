@@ -6,11 +6,10 @@ services:
     volumes:
       - db_data:/var/lib/mysql
     environment:
-      MYSQL_ROOT_PASSWORD: admin
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
       MYSQL_DATABASE: mi_base
       MYSQL_USER: admin
-      MYSQL_PASSWORD: admin
-
+      MYSQL_PASSWORD: ${MYSQL_PASSWORD}
 
   wordpress:
     image: wordpress:6.3
@@ -21,7 +20,7 @@ services:
     environment:
       WORDPRESS_DB_HOST: db
       WORDPRESS_DB_USER: admin
-      WORDPRESS_DB_PASSWORD: admin
+      WORDPRESS_DB_PASSWORD: ${WORDPRESS_DB_PASSWORD}
       WORDPRESS_DB_NAME: mi_base
 
 volumes:
